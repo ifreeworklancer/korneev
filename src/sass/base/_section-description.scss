@@ -1,0 +1,39 @@
+.section-description {
+    &__title {
+        position: relative;
+        z-index: 3;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -35px;
+            width: 75px;
+            height: 75px;
+            background: $light;
+            transform: rotate(-45deg);
+            z-index: -1;
+        }
+    }
+    &__text {
+        position: relative;
+        padding-left: 50px;
+        font-size: 24px;
+        font-family: 'HelveticaItalic', sans-serif;
+        z-index: 3;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            font-size: 18px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 40px;
+            height: 1px;
+            background: $dark;
+        }
+    }
+}

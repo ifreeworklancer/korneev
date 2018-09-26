@@ -1,0 +1,27 @@
+#result {
+    padding: 140px 0;
+    background: url('../images/bg/result-bg.jpg') 50% 50% /cover no-repeat;
+}
+
+.result-title {
+    position: relative;
+    padding-bottom: 50px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 1px;
+        background: $dark;
+    }
+}
+
+.result-item {
+    margin-bottom: 115px;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        margin-bottom: 50px;
+    }
+}

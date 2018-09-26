@@ -1,0 +1,34 @@
+#reviews {
+    padding: 100px 0 90px;
+    background: #f2f2f2;   
+}
+
+.reviews-slider-nav {
+    top: 55%;
+    left: -50px;
+    right: -50px;
+
+    @media (max-width: map_get($grid-breakpoints, xl)) {
+        top: auto;
+        left: 20px;
+        right: 20px;
+        bottom: 30px;
+    }
+
+    &-arrow {
+        max-width: 1400px;
+        
+        &-prev {
+            cursor: pointer;
+
+            &-icon {
+                margin-top: -5px;
+                transform: rotate(180deg);
+            }
+        }
+
+        &-next {
+            @extend .reviews-slider-nav-arrow-prev;
+        }
+    }
+}

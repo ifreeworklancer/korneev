@@ -1,0 +1,35 @@
+#app-footer {
+    padding-top: 95px;
+    background: #29487d;
+}
+
+.footer-item {
+    margin-top: 90px;
+    padding: 35px 0 25px;
+
+    .social-list {
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+    .text-bold {
+        font-family: 'HelveticaBold', sans-serif;
+    }
+
+    &-text {
+        font-size: 14px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -1000px;
+        right: -1000px;
+        height: 1px;
+        background: #fff;
+        opacity: .15;
+    }
+}

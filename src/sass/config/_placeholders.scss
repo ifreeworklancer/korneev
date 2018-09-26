@@ -1,0 +1,29 @@
+%pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+%img {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+%square--little {
+    width: 25px;
+    height: 25px;
+    background: $secondary;
+    transform: rotate(-45deg);
+    z-index: -11;
+}
+
+%square--middle {
+    width: 75px;
+    height: 75px;
+    background: $secondary;
+    transform: rotate(-45deg);
+    z-index: -11;
+}

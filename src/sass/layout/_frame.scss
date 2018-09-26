@@ -1,0 +1,62 @@
+#frame {
+    padding: 110px 0 120px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 120px;
+        bottom: 40px;
+        @extend %square--little;
+    }
+}
+
+.frame-item {
+
+    .section-description__text {
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: -11;
+
+        &::before {
+            top: 35px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -2000px;
+            right: -2000px;
+            bottom: 0;
+            background: #f4f4f4;
+            z-index: -1;
+        }
+    }
+
+    &-list {
+        border-bottom: 1px solid $dark;
+
+        &-item {
+            @extend .problem-item-list-item;
+            font-size: 18px;
+        }
+    }
+
+    &-btn {
+        color: $dark;
+        border: 1px solid $secondary;
+        background-image: linear-gradient(0, rgb(213, 213, 213) 0%, rgb(255, 255, 255) 100%);
+        transition: .5s;
+    }
+}
+
+.frame-img {
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+
+    @media (max-width: map_get($grid-breakpoints, xl)) {
+        left: -40%;
+    }
+}

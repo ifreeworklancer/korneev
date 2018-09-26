@@ -1,0 +1,74 @@
+.burger-menu {
+    display: none;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgba($dark, .3);
+    z-index: 10;
+    transition: .5s;
+    cursor: pointer;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        display: flex;
+    }
+
+    &.active {
+        background: transparent;
+
+        .line {
+            
+            &--top {
+                transform: rotate(-45deg) translate(-6px, 6px);
+            }
+            
+            &--middle {
+                transform: rotate(45deg);
+            }
+
+            &--bottom {
+                opacity: 0;
+            }
+        }
+    }
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background: $primary;
+        margin-bottom: 5px;
+        transition: .5s;
+    }
+}
+
+.menu {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 120px 30px 120px;
+    background: #29487d;
+    z-index: -10;
+
+    &-nav-list {
+
+        &-item {
+            margin-bottom: 25px;
+
+            &__link {
+                margin-bottom: 25px;
+                padding-bottom: 5px;
+                font-size: 34px;
+                font-family: 'HelveticaMedium', sans-serif;
+                color: #fff;
+                border-bottom: 1px solid transparent;
+                transition: .5s;
+
+                &:hover {
+                    color: #fff;
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+}

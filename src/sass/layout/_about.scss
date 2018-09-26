@@ -1,0 +1,63 @@
+#about {
+    padding-top: 90px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 100px;
+        right: 60px;
+        @extend %square--middle;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 300px;
+        left: 60px;
+        @extend %square--little;
+    }
+}
+
+.about-item {
+    margin-bottom: 80px;
+
+    &-list {
+
+        &-cell {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 30px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 14px;
+                height: 17px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJiZWxsIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtYmVsbCBmYS13LTE0IiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQ0OCA1MTIiPjxwYXRoIGZpbGw9IiMyOTQ4N2QiIGQ9Ik0yMjQgNTEyYzM1LjMyIDAgNjMuOTctMjguNjUgNjMuOTctNjRIMTYwLjAzYzAgMzUuMzUgMjguNjUgNjQgNjMuOTcgNjR6bTIxNS4zOS0xNDkuNzFjLTE5LjMyLTIwLjc2LTU1LjQ3LTUxLjk5LTU1LjQ3LTE1NC4yOSAwLTc3LjctNTQuNDgtMTM5LjktMTI3Ljk0LTE1NS4xNlYzMmMwLTE3LjY3LTE0LjMyLTMyLTMxLjk4LTMycy0zMS45OCAxNC4zMy0zMS45OCAzMnYyMC44NEMxMTguNTYgNjguMSA2NC4wOCAxMzAuMyA2NC4wOCAyMDhjMCAxMDIuMy0zNi4xNSAxMzMuNTMtNTUuNDcgMTU0LjI5LTYgNi40NS04LjY2IDE0LjE2LTguNjEgMjEuNzEuMTEgMTYuNCAxMi45OCAzMiAzMi4xIDMyaDM4My44YzE5LjEyIDAgMzItMTUuNiAzMi4xLTMyIC4wNS03LjU1LTIuNjEtMTUuMjctOC42MS0yMS43MXoiPjwvcGF0aD48L3N2Zz4=);
+            }
+        }
+    }
+}
+
+.about-img {
+    right: 0;
+    bottom: -80px;
+    z-index: -10;
+
+    @media (max-width: map_get($grid-breakpoints, xl)) {
+        right: -40%;
+    }
+}
+
+.decoration-text {
+    left: -300px;
+    bottom: 140px;
+    transform: rotate(-90deg);
+    font-size: 60px;
+    font-family: 'HelveticaBlack', sans-serif;
+    opacity: .15;
+}

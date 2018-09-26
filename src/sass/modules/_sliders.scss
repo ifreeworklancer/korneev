@@ -1,0 +1,96 @@
+.reviews-slider {
+
+    .flickity-page-dots {
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 330px;
+
+        li {
+            flex: 1 0 auto;
+            margin: 0;
+            border-radius: 0;
+            height: 2px;
+            background: #b7b7b7;
+
+            &.is-selected {
+                height: 3px;
+                background: $primary;
+            }
+        }
+    }
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 80px;
+        padding: 100px 0 0 100px;
+        width: 100%;
+        max-width: 1140px;
+        border: 1px solid $light;
+        box-shadow: 0px 10px 9px 1px rgba(0, 0, 0, 0.15);
+
+
+        @media (max-width: map_get($grid-breakpoints, xl)) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 15px 0;
+        }
+
+        &-img {
+            width: 135px;
+            height: 135px;
+            @extend %img;
+        }
+
+        &-content {
+
+            &-description {
+                border: 1px solid $light;
+                border-bottom: none;
+
+                &__data {
+                    padding: 30px 0 30px 35px;
+                    width: 60%;
+                    border-right: 1px solid $light;
+
+                    @media (max-width: map_get($grid-breakpoints, xl)) {
+                        width: 50%;
+                    }
+                }
+
+                &__name {
+                    padding: 30px;
+                    width: 40%;
+                    text-align: center;
+                    font-family: 'HelveticaBold', sans-serif;
+                    text-align: center;
+                    background: $secondary;
+
+                    @media (max-width: map_get($grid-breakpoints, xl)) {
+                        width: 50%;
+                    }
+                }
+            }
+
+            &__text {
+                position: relative;
+                margin-bottom: 60px;
+                padding-right: 50px;
+                max-width: 700px;
+
+                .quote-icon {
+                    opacity: .05;
+                    top: -30px;
+                    left: -30px;
+
+                    svg {
+                        fill: #262626;
+                    }
+                }
+            }
+        }
+    }
+}

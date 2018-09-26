@@ -1,0 +1,25 @@
+@import "config/variables";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~animate.css/animate.min.css";
+
+@import "base/body";
+@import "base/btn";
+@import "base/section";
+@import "base/section-description";
+
+@import "modules/menu";
+@import "modules/forms";
+@import "modules/sliders";
+
+@import "layout/app-header";
+@import "layout/header-banner";
+@import "layout/problem";
+@import "layout/enroll";
+@import "layout/about";
+@import "layout/result";
+@import "layout/frame";
+@import "layout/reviews";
+@import "layout/product";
+@import "layout/app-footer";
