@@ -10047,6 +10047,19 @@ section {
   }
 }
 
+#header-banner .decoration-text {
+  z-index: 15;
+  left: -400px;
+  bottom: 400px;
+}
+
+@media (max-width: 1600px) {
+  #header-banner .decoration-text {
+    left: -200px;
+    bottom: 240px;
+  }
+}
+
 .header-banner-item-description {
   max-width: 525px;
   font-size: 24px;

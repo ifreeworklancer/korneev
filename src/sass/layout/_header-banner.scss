@@ -7,6 +7,18 @@
         height: auto;
         padding: 130px 0;
     }
+    
+
+    .decoration-text {
+        z-index: 15;
+        left: -400px;
+        bottom: 400px;
+
+        @media (max-width: 1600px) {
+            left: -200px;
+            bottom: 240px;
+        }
+    }
 }
 
 .header-banner-item {
