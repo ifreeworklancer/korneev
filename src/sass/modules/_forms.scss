@@ -5,8 +5,10 @@
     &.in-focus {
 
         .label-placeholder {
+            font-size: 14px;
             bottom: 110%;
             color: #fff;
+            opacity: .8;
         }
 
         .form-control {
