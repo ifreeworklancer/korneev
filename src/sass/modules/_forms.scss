@@ -68,3 +68,26 @@
         transition: .5s;
     }
 }
+
+#form-price {
+    margin-top: 0px;
+
+    .form-group {
+        width: 100%;
+
+        &.in-focus {
+
+            .label-placeholder {
+                bottom: 100%;
+            }
+        }
+
+        .label-placeholder {
+            bottom: 20%;
+        }
+
+        .form-control {
+            padding: 10px 15px;
+        }
+    }
+}

@@ -65,7 +65,6 @@
         height: 65px;
         text-align: center;
         color: #fff;
-        perspective: 1000px;
 
         &-text {
             @extend %pos;
@@ -73,25 +72,7 @@
             font-family: 'HelveticaMedium', sans-serif;
             font-size: 18px;
             background: $primary;
-            transition: .5s;
-            backface-visibility: hidden;
-        }
-
-        &-hover-text {
-            @extend .product-card-footer-text;
-            transform: rotateX(180deg);
-            background: #1c355f;
-        }
-
-        &:hover {
-
-            .product-card-footer-text {
-                transform: rotateX(180deg);
-            }
-
-            .product-card-footer-hover-text {
-                transform: rotateX(360deg);
-            }
+            cursor: pointer;
         }
     }
 }

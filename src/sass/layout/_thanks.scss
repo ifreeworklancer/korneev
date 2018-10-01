@@ -1,0 +1,17 @@
+#thanks {
+    height: 100vh;
+
+    .thanks-item {
+
+        &-title {
+
+            @media (max-width: map_get($grid-breakpoints, sm)) {
+                font-size: 30px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+        }
+    }
+}

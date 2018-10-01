@@ -56,6 +56,10 @@
         transform: translateY(-50%);
         z-index: 10;
 
+        @media (max-width: 1400px) {
+            left: -75px;
+        }
+
         @media (max-width: map_get($grid-breakpoints, sm)) {
             top: 0;
             left: 15px;
@@ -70,6 +74,12 @@
         transition: .5s;
         opacity: 1;
         visibility: visible;
+
+        @media (max-width: 1400px) {
+            top: 20px;
+            transform: translateY(0);
+            right: 0;
+        }
 
         &-item {
 

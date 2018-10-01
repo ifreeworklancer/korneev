@@ -69,6 +69,21 @@ import 'flickity/dist/flickity.css';
     });
 
     /**
+     * Price modal
+     */
+    $('.product-card-footer-text').on('click', function (e) {
+        e.preventDefault();
+        $('.price-modal').addClass('modal-active animated bounceInUp').removeClass('bounceOutDown');
+    });
+
+    $('#close-price-modal').on('click', function (e) {
+        setTimeout(function () {
+            $('.price-modal').removeClass('modal-active bounceInUp');
+        }, 300)
+
+    });
+
+    /**
      * Block animate
      */
     $('#app-header').addClass('animated bounceInDown');
