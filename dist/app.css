@@ -10150,6 +10150,7 @@ section {
 }
 
 #header-banner {
+  height: 100vh;
   max-height: 1000px;
   background: url("../images/bg/header-banner-bg.jpg") 50% 50%/cover no-repeat;
 }
