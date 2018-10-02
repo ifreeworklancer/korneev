@@ -8,6 +8,14 @@ import 'flickity/dist/flickity.css';
 (function () {
 
     /**
+     * Height header-banner 
+     */
+     var hb = $('#header-banner');
+     var wh = $(window).height();
+
+     $(hb).css('height', `${wh}px`)
+
+    /**
      * Burger-menu
      */
     $('.burger-menu').click(function () {

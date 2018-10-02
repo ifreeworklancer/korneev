@@ -2019,6 +2019,14 @@ window.jQuery = window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 (function () {
 
     /**
+     * Height header-banner 
+     */
+    var hb = $('#header-banner');
+    var wh = $(window).height();
+
+    $(hb).css('height', wh + 'px');
+
+    /**
      * Burger-menu
      */
     $('.burger-menu').click(function () {
